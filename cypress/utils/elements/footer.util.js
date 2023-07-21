@@ -1,23 +1,30 @@
 // selectors
 const selectors = {
-    footer: '.page-footer',
-    writeForUsLnk: 'body > div.page-wrapper > footer > div > div.links > div > ul > li > a',
-    navItems: '.nav item',
-    subscSection: '#newsletter-validate-detail',
-    emailField: '#newsletter',
-    subscButton: button[tittle='subscribe']
+    footer: '#footerPanel',
+    copyright: '.copyright',
+    devLink: '#footerPanel > .visit',
+    homeLink: '#footerPanel > ul > li[href*="index"]',
+    aboutLink: '#footerPanel > ul > li[href*="about"]',
+    serviceLink: '#footerPanel > ul > li[href*="services"]',
+    productsLink: '#footerPanel > ul > li[href*="products"]',
+    locationLink: '#footerPanel > ul > li[href*="contacts"]',
+    forumLink: '#footerPanel > ul > li[href*="forum"]',
+    sitemapLink: '#footerPanel > ul > li[href*="sitemap"]',
+    contactsLink: '#footerPanel > ul > li[href="contact.html"]'
 }
 
 // expected results
 const expected = {
-writeForUs: 'Write for us',
-navItem1: 'Search Terms',
-navItem2: 'Privacy and Cookie Policy',
-navItem3: 'Advanced Search',
-navItem4: 'Orders and Returns',
-navItem5: 'Contact Us', 
-emailFieldPlchold: 'Enter your email address',
-subscBtnText: 'Subscribe'
+    copyrightText: '© Parasoft. All rights reserved.',
+    devLinkText: 'Visit us at: www.parasoft.com',
+    homeLink: '/parabank/index.htm',
+    aboutLink: 'about.html',
+    serviceLink: 'services.htm',
+    productsLink: 'http://www.parasoft.com/jsp/products.jsp',
+    locationLink: 'http://www.parasoft.com/jsp/pr/contacts.jsp',
+    forumLink: 'http://forums.parasoft.com/',
+    sitemapLink: '/parabank/sitemap.htm',
+    contactsLink: 'contact.htm'
 
 }
 
