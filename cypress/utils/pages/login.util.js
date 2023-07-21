@@ -1,34 +1,11 @@
 //selectors
 const selectors = {
-    loginPage: '.customer-account-login',
-    pageTittle: '.base',
-    regCustSec: '#block-customer-login-heading',
-    newCustSec: '#block-new-customer-heading',
-    fieldNote: '.field note',
-    labelForEmail: "//label[@for='email']",
-    emailInput: '#email',
-    labelForPass: "(//label[@for='pass'])[1]",
-    passInput: '#pass',
-    signInBtn: '#send2',
-    remindLink: '.action remind > span',
-    fieldNote2: '.block-content > p',
-    createUserBtn: '.action create primary'
+  
 }
 
 //expectede results
 const expected = {
-    tittle: 'Customer Login',
-    subTittle: 'Registered Customers',
-    noteField1: 'If you have an account, sign in with your email address.',
-    emailLabel: 'Email',
-    passLabel: 'Password',
-    signInLabel: 'Sign In',
-    forgotPassLabel: 'Forgot Your Password?',
-    newCustLabel: 'New Customers',
-    newCustSubTittle: 'Creating an account has many benefits: check out faster, keep more than one address, track orders and more.',
-    createAccLabel: 'Create an Account',
-    demoEmail: 'roni_cost@example.com',
-    demoPass: 'roni_cost3@example.com'
+ 
 }
 
  // Fuctions
@@ -53,5 +30,6 @@ export default {
     expected,
     openPage,
     enterEmail,
-    enterPassword
+    enterPassword,
+    checkPage
 }
