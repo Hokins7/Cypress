@@ -14,7 +14,7 @@ const selectors = {
     link5: '.leftmenu > li > a[href*="contacts"]',
     link6: '.leftmenu > li > a[href*="admin"]',
     btnHome: '.button > li[class="home"]',
-    btnAbout: '.button > li[class="about"]',
+    btnAbout: '.button > li[class="aboutus"]',
     btnContact: '.button > li[class="contact"]',
 }
 
