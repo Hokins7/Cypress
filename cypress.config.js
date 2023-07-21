@@ -11,7 +11,7 @@ module.exports = defineConfig({
     "screenshotsFolder": "cypress/temp/screenshots",
     "videosFolder": "cypress/temp/videos",
     "reporter": "junit",
-    "baseUrl": "https://parabank.parasoft.com/parabank/index.htm",
+    "baseUrl": "https://magento.softwaretestingboard.com/",
     "reporterOptions": {
       "mochaFile": "cypress/temp/reports/report-[hash].xml",
       "toConsole": true
