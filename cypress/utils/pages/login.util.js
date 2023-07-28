@@ -5,7 +5,7 @@ const selectors = {
    loginPanel: '#loginPanel',
    loginSectionHeading: 'form[name="login"] > p:nth-child(1)',
    passSectionHeading: 'form[name="login"] > p:nth-child(2)',
-   loginField: 'imput[type="text"]',
+   loginField: 'input[type="text"]',
    passField: 'input[type="password"]',
    logginBtn: 'input[type="submit"]',
    forgotLink: 'a[href="lookup.htm"]',
