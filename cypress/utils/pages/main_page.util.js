@@ -12,15 +12,23 @@ const selectors = {
     onlineFirstServ: () => `${selectors.onlineServices} > li:nth-child(2)`,
     onlineSecondServ: () => `${selectors.onlineServices} > li:nth-child(3)`,
     onlineThirdServ: () => `${selectors.onlineServices} > li:nth-child(4)`,
-    readMoreFirstLink: 'a[href="services.htm"]',
+    readMoreFirstLink: '.more > a[href="services.htm"] ',
     latestNewsImg: () => `${selectors.rightPanel} > h4`,
     eventsList: '.events',
-    date: '.captionethree',
+    date: '.captionthree',
     eventFirst: () => `${selectors.eventsList} > li:nth-child(2)`,
     eventSecond: () => `${selectors.eventsList} > li:nth-child(3)`,
     eventThird: () => `${selectors.eventsList} > li:nth-child(4)`,
     readMoreSecondLink: 'a[href="news.htm"]'
 };
+
+const getCurrentDate = () => {
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const year = String(currentDate.getFullYear());
+    return `${month}/${day}/${year}`;
+  }
 
 const expected = {
     atmServicesTxt: 'ATM Services',
@@ -30,16 +38,18 @@ const expected = {
     atmFourServTxt: 'Make Deposits',
     onlineServicesTxt: 'Online Services',
     onlineFirstServTxt: 'Bill Pay',
-    onlineThirdServTxt: 'Account History',
-    onlineFourServTxt: 'Transfer Funds',
-    date: new Date().toLocaleDateString(),
+    onlinesSecondServTxt: 'Account History',
+    onlineThirdServTxt: 'Transfer Funds',
+    date: getCurrentDate(),
     eventFirstTxt: 'ParaBank Is Now Re-Opened',
     eventSecondTxt: 'New! Online Bill Pay',
     eventThirdTxt: 'New! Online Account Transfers',
     readMoreTxt: 'Read More',
 }
 
+
 export default {
     ...selectors,
-    expected
+    expected,
+    
 }
