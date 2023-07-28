@@ -33,4 +33,15 @@ const expected = {
     onlineFirstServTxt: 'Bill Pay',
     onlineThirdServTxt: 'Account History',
     onlineFourServTxt: 'Transfer Funds',
+    latestNewsImg: 'images/icon4.jpg',
+    date: new Date().toLocaleDateString(),
+    eventFirstTxt: 'ParaBank Is Now Re-Opened',
+    eventSecondTxt: 'New! Online Bill Pay',
+    eventThirdTxt: 'New! Online Account Transfers',
+    readMoreTxt: 'Read More',
+}
+
+export default {
+    ...selectors,
+    expected
 }
