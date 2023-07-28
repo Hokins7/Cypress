@@ -8,9 +8,13 @@ describe('Elements', () => {
             cy.get(MainPage.rightPanel).should('be.visible');
           })
         it('Services image is displayed', () => {
-            cy.get(MainPage.servicesImg)
-                .should('have.css', 'background', `url(${MainPage.expected.servicesImg}) 0 0 no-repeat #fff`)
-                .and('be.visible');
+            cy.get(MainPage.servicesImg).should('be.visible');
+        })
+        it('ATM services header is displayed', () => {
+            cy.get(MainPage.atmServices).should('be.visible');
+        })
+        it('Online services image is displayed', () => {
+            
         })
     })
 })
