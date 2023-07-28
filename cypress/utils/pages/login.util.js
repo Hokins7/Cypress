@@ -10,6 +10,7 @@ const selectors = {
    logginBtn: 'input[type="submit"]',
    forgotLink: 'a[href="lookup.htm"]',
    registerLink: 'a[href="register.htm"]',
+   accountPanel: '.ng-scope'
 }
 
 //expectede results

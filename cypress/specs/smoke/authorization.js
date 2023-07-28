@@ -1,17 +1,15 @@
 import Login from '../../utils/pages/login.util';
-import Header from '../../utils/elements/header.util';
 
 describe ('Authorization', () => {
 
-    before (() => {
-        Login.openPage();
-    })
+    before(() => cy.visit('/'));
 
     it('Login', () => {
-        Login.checkPage();
-        Login.enterEmail(Login.expected.demoEmail);
-        Login.enterPassword(Login.expected.demoPass);
-        cy.get(Login.signInBtn).click();
+        Login.checkLoginSection();
+        Login.enterUsername(Login.expected.login);
+        Login.enterPassword(Login.expected.password);
+        cy.get(Login.logginBtn).click();
+        cy.get(Login.accountPanel).should('be.visible');
     })
 
     it('Logout', () => {
