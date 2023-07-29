@@ -99,3 +99,34 @@ describe('Elements', () => {
         })
     })
 })
+
+describe('Functionality', () => {
+    it('ATM service first link redirect correctly', () => {
+        cy.get(MainPage.atmFirstServ().click());
+        cy.url().should('include', MainPage.expected.atmServiceRedirect);
+    })
+    it('ATM service second link redirect correctly', () => {
+        cy.get(MainPage.atmSecondServ().click());
+        cy.url().should('include', MainPage.expected.atmServiceRedirect);
+    })
+    it('ATM service third link redirect correctly', () => {
+        cy.get(MainPage.atmThirdServ().click());
+        cy.url().should('include', MainPage.expected.atmServiceRedirect);
+    })
+    it('ATM service four link redirect correctly', () => {
+        cy.get(MainPage.atmFourServ().click());
+        cy.url().should('include', MainPage.expected.atmServiceRedirect);
+    })
+    it('Online service first link redirect correctly', () => {
+        cy.get(MainPage.atmFirstServ().click());
+        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+    })
+    it('Online service second link redirect correctly', () => {
+        cy.get(MainPage.atmSecondServ().click());
+        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+    })
+    it('Online service third link redirect correctly', () => {
+        cy.get(MainPage.atmThirdServ().click());
+        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+    })
+})

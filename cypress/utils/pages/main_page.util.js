@@ -45,6 +45,8 @@ const expected = {
     eventSecondTxt: 'New! Online Bill Pay',
     eventThirdTxt: 'New! Online Account Transfers',
     readMoreTxt: 'Read More',
+    atmServiceRedirect: '/ParaBank?wsdl',
+    onlineServiceRedirect: '/bank?_wadl&_type=xml'
 }
 
 
