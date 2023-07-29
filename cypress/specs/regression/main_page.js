@@ -1,5 +1,6 @@
 import MainPage from '../../utils/pages/main_page.util'
 import Service from '../../utils/pages/service'
+import News from '../../utils/pages/news'
 
 describe('Elements', () => {
     before(() => cy.visit('/'));
@@ -144,17 +145,22 @@ describe('Functionality', () => {
     })
     it('First news link redirect correctly', () => {
         cy.get(MainPage.eventFirst()).click();
-        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.url().should('include', News.expected.newsPageLink);
         cy.go('back');
     })
     it('Second news link redirect correctly', () => {
         cy.get(MainPage.eventSecond()).click();
-        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.url().should('include', News.expected.newsPageLink);
         cy.go('back');
     })
     it('Third news link redirect correctly', () => {
         cy.get(MainPage.eventThird()).click();
-        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.url().should('include', News.expected.newsPageLink);
+        cy.go('back');
+    })
+    it('Second "Read more" link redirect correctly', () => {
+        cy.get(MainPage.readMoreSecondLink).click();
+        cy.url().should('include', News.expected.newsPageLink);
         cy.go('back');
     })
 })
