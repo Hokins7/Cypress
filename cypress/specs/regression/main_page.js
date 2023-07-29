@@ -1,4 +1,5 @@
 import MainPage from '../../utils/pages/main_page.util'
+import Service from '../../utils/pages/service'
 
 describe('Elements', () => {
     before(() => cy.visit('/'));
@@ -102,31 +103,43 @@ describe('Elements', () => {
 
 describe('Functionality', () => {
     it('ATM service first link redirect correctly', () => {
-        cy.get(MainPage.atmFirstServ().click());
+        cy.get(MainPage.atmFirstServ()).click();
         cy.url().should('include', MainPage.expected.atmServiceRedirect);
+        cy.go('back');
     })
     it('ATM service second link redirect correctly', () => {
-        cy.get(MainPage.atmSecondServ().click());
+        cy.get(MainPage.atmSecondServ()).click();
         cy.url().should('include', MainPage.expected.atmServiceRedirect);
+        cy.go('back');
     })
     it('ATM service third link redirect correctly', () => {
-        cy.get(MainPage.atmThirdServ().click());
+        cy.get(MainPage.atmThirdServ()).click();
         cy.url().should('include', MainPage.expected.atmServiceRedirect);
+        cy.go('back');
     })
     it('ATM service four link redirect correctly', () => {
-        cy.get(MainPage.atmFourServ().click());
+        cy.get(MainPage.atmFourServ()).click();
         cy.url().should('include', MainPage.expected.atmServiceRedirect);
+        cy.go('back');
     })
     it('Online service first link redirect correctly', () => {
-        cy.get(MainPage.atmFirstServ().click());
+        cy.get(MainPage.onlineFirstServ()).click();
         cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.go('back');
     })
     it('Online service second link redirect correctly', () => {
-        cy.get(MainPage.atmSecondServ().click());
+        cy.get(MainPage.onlineSecondServ()).click();
         cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.go('back');
     })
     it('Online service third link redirect correctly', () => {
-        cy.get(MainPage.atmThirdServ().click());
+        cy.get(MainPage.onlineThirdServ()).click();
         cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.go('back');
+    })
+    it('First "Read more" link redirect correctly', () => {
+        cy.get(MainPage.readMoreFirstLink).click();
+        cy.url().should('include', Service.expected.servicePageLink);
+        cy.go('back');
     })
 })
