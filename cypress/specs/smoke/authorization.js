@@ -1,4 +1,5 @@
 import Login from '../../utils/pages/login.util';
+import SingUp from '../../utils/pages/singup.util'
 
 describe ('Authorization', () => {
 
@@ -6,8 +7,8 @@ describe ('Authorization', () => {
 
     it('Login', () => {
         Login.checkLoginSection();
-        Login.enterUsername(Login.expected.login);
-        Login.enterPassword(Login.expected.password);
+        Login.enterUsername(SingUp.expected.userNickNameAcc);
+        Login.enterPassword(SingUp.expected.passwordAcc);
         cy.get(Login.logginBtn).click();
         cy.get(Login.accountPanel).should('be.visible');
     })

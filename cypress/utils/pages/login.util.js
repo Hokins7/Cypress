@@ -21,8 +21,6 @@ const expected = {
    logginBtnText: 'Log In',
    forgotLinkText: 'Forgot login info?',
    registerLinkText: 'Register',
-   login: 'Tester',
-   password: 'TesterPass'
 }
 
  // Fuctions
