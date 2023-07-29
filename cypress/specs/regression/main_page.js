@@ -1,6 +1,6 @@
 import MainPage from '../../utils/pages/main_page.util'
-import Service from '../../utils/pages/service'
-import News from '../../utils/pages/news'
+import Service from '../../utils/pages/service.util'
+import News from '../../utils/pages/news.util'
 
 describe('Elements', () => {
     before(() => cy.visit('/'));
