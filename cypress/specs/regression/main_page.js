@@ -142,4 +142,19 @@ describe('Functionality', () => {
         cy.url().should('include', Service.expected.servicePageLink);
         cy.go('back');
     })
+    it('First news link redirect correctly', () => {
+        cy.get(MainPage.eventFirst()).click();
+        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.go('back');
+    })
+    it('Second news link redirect correctly', () => {
+        cy.get(MainPage.eventSecond()).click();
+        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.go('back');
+    })
+    it('Third news link redirect correctly', () => {
+        cy.get(MainPage.eventThird()).click();
+        cy.url().should('include', MainPage.expected.onlineServiceRedirect);
+        cy.go('back');
+    })
 })
