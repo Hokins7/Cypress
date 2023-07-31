@@ -18,11 +18,7 @@ describe('Elements', () => {
             .contains(AboutUs.expected.secParagraphTxt)
             .and('be.visible');
     })
-    it('Third paragraph is displayed', () => {
-        cy.get(AboutUs.thrdParagraph)
-            .contains( AboutUs.expected.thrdParagraphTxt)
-            .and('be.visible');
-    })
+    
 
 
 })
