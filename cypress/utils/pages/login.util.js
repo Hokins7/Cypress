@@ -10,7 +10,7 @@ const selectors = {
    logginBtn: 'input[type="submit"]',
    forgotLink: 'a[href="lookup.htm"]',
    registerLink: 'a[href="register.htm"]',
-   accountPanel: '.ng-scope'
+   accountPanel: '.ng-scope',
 }
 
 //expectede results
@@ -27,20 +27,17 @@ const expected = {
  const checkLoginSection = () => {
     cy.get(selectors.loginPanel).should('be.visible');
  }
- const enterUsername  = (value) => {
+ const logIn  = (value1, value2) => {
     cy.get(selectors.loginField).clear()
-    cy.get(selectors.loginField).type(value)
- };
-
- const enterPassword  = (value) => {
+    cy.get(selectors.loginField).type(value1)
     cy.get(selectors.passField).clear()
-    cy.get(selectors.passField).type(value)
+    cy.get(selectors.passField).type(value2)
+    cy.get(selectors.logginBtn).click();
  };
 
 export default {
     ...selectors,
     expected,
-    enterUsername,
-    enterPassword,
-    checkLoginSection
+    checkLoginSection,
+    logIn
 }

@@ -7,9 +7,7 @@ describe ('Authorization', () => {
 
     it('Login', () => {
         Login.checkLoginSection();
-        Login.enterUsername(SingUp.expected.userNickNameAcc);
-        Login.enterPassword(SingUp.expected.passwordAcc);
-        cy.get(Login.logginBtn).click();
+        Login.logIn(SingUp.expected.userNickNameAcc, SingUp.expected.passwordAcc);
         cy.get(Login.accountPanel).should('be.visible');
     })
 
