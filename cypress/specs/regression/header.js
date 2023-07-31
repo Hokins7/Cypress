@@ -66,8 +66,9 @@ describe('Elements', () => {
 });
 
 describe('Functionality', () => {
-    it('', () => {
-      
+    it('Left logo image redirect to admin page', () => {
+        cy.get(Header.logo).click();
+        cy.url().should('include', 'parabank/admin.htm');
     })
 
 });
