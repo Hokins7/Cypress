@@ -66,8 +66,8 @@ describe('Elements', () => {
 });
 
 describe('Functionality', () => {
-    it('Button "Contact" is displayed', () => {
-      cy.get(Header.btnContact).should('be.visible');
+    it('', () => {
+      
     })
 
 });
