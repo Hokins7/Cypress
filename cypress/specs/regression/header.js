@@ -1,4 +1,5 @@
 import Header from '../../utils/elements/header.util'
+import Main from '../../utils/pages/main_page.util'
 
 describe('Elements', () => {
     before(() => cy.visit('/'));
@@ -70,5 +71,10 @@ describe('Functionality', () => {
         cy.get(Header.logo).click();
         cy.url().should('include', 'parabank/admin.htm');
     })
+
+    it('Right logo image redirect to main page', () => {
+      cy.get(Header.bankLogo).click();
+      cy.url().should('include', Main.expected.mainPageLink);
+  })
 
 });
