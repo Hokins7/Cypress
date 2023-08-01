@@ -23,6 +23,12 @@ describe('Elements', () => {
             .contains( AboutUs.expected.thrdParagraphTxt)
             .and('be.visible');
     })
+})
 
-
+describe('Functionality', () => {
+    it('Parasoft link redirect to parasoft site', () => {
+        cy.get(AboutUs.paraLink).invoke('removeAttr', 'target').click();
+        cy.url().should('include', AboutUs.expected.parasoftLink);
+        cy.go('back');
+    })
 })
