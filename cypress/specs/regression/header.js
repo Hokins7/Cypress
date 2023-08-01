@@ -80,12 +80,27 @@ describe('Functionality', () => {
     it('AboutUs link redirect to aboutUs page', () => {
       cy.get(Header.link2).click();
       cy.url().should('include', AboutUs.expected.aboutUsLink)
+      cy.go('back');
     })
     it('Services link redirect to services page', () => {
-      cy.go('back');
       cy.get(Header.link3).click();
       cy.url().should('include', '/services.htm');
+      cy.go('back');
     })
-
+    it('Products link redirect to product page', () => {
+      cy.get(Header.link4).click();
+      cy.url().should('include', 'products/');
+      cy.go('back');
+    })
+    it('Location link redirect to location page', () => {
+      cy.get(Header.link5).click();
+      cy.url().should('include', 'solutions/');
+      cy.go('back');
+    })
+    it('Admin Page link redirect to admin page', () => {
+      cy.get(Header.link6).click();
+      cy.url().should('include', '/admin.htm');
+      cy.go('back');
+    })
 
 });
