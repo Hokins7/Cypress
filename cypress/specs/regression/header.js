@@ -102,5 +102,20 @@ describe('Functionality', () => {
       cy.url().should('include', '/admin.htm');
       cy.go('back');
     })
+    it('Main Page icon redirect to main page', () => {
+      cy.get(Header.btnHome).click();
+      cy.url().should('include', Main.expected.mainPageLink);
+      cy.go('back');
+    })
+    it('About Us icon redirect to about us page', () => {
+      cy.get(Header.btnAbout).click();
+      cy.url().should('include', AboutUs.expected.aboutUsLink);
+      cy.go('back');
+    })
+    it('Contact Page icon redirect to contact page', () => {
+      cy.get(Header.btnContact).click();
+      cy.url().should('include', '/contact.htm');
+      cy.go('back');
+    })
 
 });
