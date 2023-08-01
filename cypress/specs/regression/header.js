@@ -1,5 +1,6 @@
 import Header from '../../utils/elements/header.util'
 import Main from '../../utils/pages/main_page.util'
+import AboutUs from '../../utils/pages/aboutus.util'
 
 describe('Elements', () => {
     before(() => cy.visit('/'));
@@ -75,6 +76,16 @@ describe('Functionality', () => {
     it('Right logo image redirect to main page', () => {
       cy.get(Header.bankLogo).click();
       cy.url().should('include', Main.expected.mainPageLink);
-  })
+    })
+    it('AboutUs link redirect to aboutUs page', () => {
+      cy.get(Header.link2).click();
+      cy.url().should('include', AboutUs.expected.aboutUsLink)
+    })
+    it('Services link redirect to services page', () => {
+      cy.go('back');
+      cy.get(Header.link3).click();
+      cy.url().should('include', '/services.htm');
+    })
+
 
 });
