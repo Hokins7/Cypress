@@ -3,7 +3,7 @@ import Main from '../../utils/pages/main_page.util'
 import AboutUs from '../../utils/pages/aboutus.util'
 
 describe('Elements', () => {
-    before(() => cy.visit('/'));
+    before(() => {cy.visit('/'); cy.wait(2000);});
 
     describe('Each element are displayed', () => {
       it('Main panel is displayed', () => {
