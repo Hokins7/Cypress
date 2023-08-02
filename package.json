@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec 'cypress/specs/regression/*' --headless --browser=chrome"
+    "test": "cypress run --spec 'cypress/specs/regression/*' --headless --browser=chrome",
+    "smoke": "cypress run --spec 'cypress/specs/smoke/*' --headless --browser=chrome"
   },
   "keywords": [],
   "author": "",
