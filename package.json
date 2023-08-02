@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run --spec 'cypress/specs/regression/*' --headless --browser=chrome",
-    "smoke": "cypress run --spec 'cypress/specs/smoke/*' --headless --browser=chrome"
+    "smoke": "cypress run --spec 'cypress/specs/smoke/*' --headless --browser=chrome",
+    "api": "cypress run --spec 'cypress/specs/api/*' --headless --browser=chrome"
   },
   "keywords": [],
   "author": "",
