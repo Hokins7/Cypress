@@ -19,5 +19,23 @@ describe('Elements', () => {
     it('Form is displayed', () => {
         cy.get(Contacts.form).should('be.visible');
     })
+    it('Input name and label is displayed', () => {
+        cy.get(Contacts.inputName).should('be.visible');
+        cy.get(Contacts.nameLabel)
+            .should('have.text', Contacts.expected.nameTxt)
+            .and('be.visible');
+    })
+    it('Input email and label is displayed', () => {
+        cy.get(Contacts.inputEmail).should('be.visible');
+        cy.get(Contacts.emailLabel)
+            .should('have.text', Contacts.expected.emailTxt)
+            .and('be.visible');
+    })
+    it('Input phone and label is displayed', () => {
+        cy.get(Contacts.inputPhone).should('be.visible');
+        cy.get(Contacts.phoneLabel)
+            .should('have.text', Contacts.expected.phoneTxt)
+            .and('be.visible')
+    })
 
 })
