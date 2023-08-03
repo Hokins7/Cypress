@@ -21,7 +21,8 @@ const expected = {
     emailTxt: 'Email:',
     phoneTxt: 'Phone:',
     messageTxt: 'Message:',
-    sendBtnTxt: 'Send to Customer Care'
+    sendBtnTxt: 'Send to Customer Care',
+    contactsLink: '/parabank/contact.htm'
 }
 
 export default {
