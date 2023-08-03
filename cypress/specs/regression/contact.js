@@ -37,5 +37,16 @@ describe('Elements', () => {
             .should('have.text', Contacts.expected.phoneTxt)
             .and('be.visible')
     })
+    it('Input message and label is displayed', () => {
+        cy.get(Contacts.inputMessage).should('be.visible');
+        cy.get(Contacts.messageLabel)
+            .should('have.text', Contacts.expected.messageTxt)
+            .and('be.visible');
+    })
+    it('Submit button and label is displayeed', () => {
+        cy.get(Contacts.sendBtn)
+            .should('have.attr', 'value', Contacts.expected.sendBtnTxt)
+            .and('be.visible');
+    })
 
 })
