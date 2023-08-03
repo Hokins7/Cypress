@@ -7,12 +7,12 @@ describe('Elements', () => {
         cy.get(Contacts.rightPanel).should('be.visible');
     })
     it('Tittle is displayed', () => {
-        cy.get(Contacts.tittle)
+        cy.get(Contacts.tittle())
             .should('have.text', Contacts.expected.tittleTxt)
             .and('be.visible');
     })
     it('SubTittle is displayed', () => {
-        cy.get(Contacts.subTittle)
+        cy.get(Contacts.subTittle())
             .should('have.text', Contacts.expected.subTittleTxt)
             .and('be.visible');
     })
@@ -44,7 +44,7 @@ describe('Elements', () => {
             .and('be.visible');
     })
     it('Submit button and label is displayeed', () => {
-        cy.get(Contacts.sendBtn)
+        cy.get(Contacts.sendBtn).last()
             .should('have.attr', 'value', Contacts.expected.sendBtnTxt)
             .and('be.visible');
     })

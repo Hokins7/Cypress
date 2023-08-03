@@ -7,11 +7,11 @@ const selectors = {
     inputEmail: '#email',
     inputPhone: '#phone',
     inputMessage: '#message',
-    nameLabel: 'td[align="right"] > b:nth-child(1)',
-    emailLabel: 'td[align="right"] > b:nth-child(2)',
-    phoneLabel: 'td[align="right"] > b:nth-child(3)',
-    messageLabel: 'td[align="right"] > b:nth-child(4)',
-    sendBtn: 'input[type="submit"]:nth-child(1)'
+    nameLabel: 'tr:nth-child(1) > td:nth-child(1) > b ',
+    emailLabel: 'tr:nth-child(2) > td:nth-child(1) > b ',
+    phoneLabel: 'tr:nth-child(3) > td:nth-child(1) > b ',
+    messageLabel: 'tr:nth-child(4) > td:nth-child(1) > b ',
+    sendBtn: 'input[type="submit"]'
 }
 
 const expected = {
