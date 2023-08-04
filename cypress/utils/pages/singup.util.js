@@ -16,8 +16,8 @@ const selectors = {
 
 const expected = {
     singupPageLink: '/parabank/register.htm',
-    firstNameAcc: 'Tester',
-    lastNameAcc: 'Testeron',
+    firstNameAcc: Cypress.env().FIRST_NAME,
+    lastNameAcc: Cypress.env().LAST_NAME,
     streetAddressAcc: 'Moonlight 7667',
     cityAddressAcc: 'Novigrad',
     stateAddressAcc: 'TM',
