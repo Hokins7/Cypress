@@ -22,7 +22,11 @@ const expected = {
     phoneTxt: 'Phone:',
     messageTxt: 'Message:',
     sendBtnTxt: 'Send to Customer Care',
-    contactsLink: '/parabank/contact.htm'
+    contactsLink: '/parabank/contact.htm',
+    email: '22tester22@suntik.org',
+    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    apearTxt: `Thank you ${Cypress.env().FIRST_NAME}`,
+    apearMsg: 'A Customer Care Representative will be contacting you.'
 }
 
 export default {

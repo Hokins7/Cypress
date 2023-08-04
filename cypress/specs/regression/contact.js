@@ -1,4 +1,5 @@
 import Contacts from '../../utils/pages/contact.util'
+import SingUp from '../../utils/pages/singup.util'
 
 describe('Elements', () => {
     before(() => cy.visit(Contacts.expected.contactsLink));
@@ -52,5 +53,17 @@ describe('Elements', () => {
 })
 
 describe('Functionality', () => {
-
+    it('Form accepting and sending information', () => {
+        cy.get(Contacts.inputName).type(SingUp.expected.firstNameAcc);
+        cy.get(Contacts.inputEmail).type(Contacts.expected.email);
+        cy.get(Contacts.inputPhone).type(SingUp.expected.phoneNumberAcc);
+        cy.get(Contacts.inputMessage).type(Contacts.expected.message);
+        cy.get(Contacts.sendBtn).last().click();
+        cy.get(Contacts.subTittle()).first()
+            .contains(Contacts.expected.apearTxt)
+            .and('be.visible');
+        cy.get(Contacts.subTittle()).last()
+            .contains(Contacts.expected.apearMsg)
+            .and('be.visible')
+    })
 })
