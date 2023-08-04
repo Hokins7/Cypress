@@ -18,14 +18,14 @@ const expected = {
     singupPageLink: '/parabank/register.htm',
     firstNameAcc: Cypress.env().FIRST_NAME,
     lastNameAcc: Cypress.env().LAST_NAME,
-    streetAddressAcc: 'Moonlight 7667',
-    cityAddressAcc: 'Novigrad',
-    stateAddressAcc: 'TM',
-    zipCodeAcc: '75755',
-    phoneNumberAcc: '916 111 1111',
-    ssnAcc: '777 777 7777',
-    userNickNameAcc: 'WitherGerald',
-    passwordAcc: 'MerigoltMyLove99',
+    streetAddressAcc: Cypress.env().STREET_ADDRESS,
+    cityAddressAcc: Cypress.env().CITY,
+    stateAddressAcc: Cypress.env().STATE,
+    zipCodeAcc: Cypress.env().ZIP_CODE,
+    phoneNumberAcc: Cypress.env().PHONE_NUMBER,
+    ssnAcc: Cypress.env().SSN_NUMBER,
+    userNickNameAcc: Cypress.env().NICK_NAME,
+    passwordAcc: PASSWORD,
     welcomeMsg: 'Welcome WitherGerald'
 }
 
