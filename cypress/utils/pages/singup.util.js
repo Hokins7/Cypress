@@ -25,7 +25,7 @@ const expected = {
     phoneNumberAcc: Cypress.env().PHONE_NUMBER,
     ssnAcc: Cypress.env().SSN_NUMBER,
     userNickNameAcc: Cypress.env().NICK_NAME,
-    passwordAcc: PASSWORD,
+    passwordAcc: Cypress.env().PASSWORD,
     welcomeMsg: 'Welcome WitherGerald'
 }
 

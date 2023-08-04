@@ -3,9 +3,10 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents (on, config) {
-      config.env = process.env
-      return config;
-    }, 
+     config.env = process.env
+     return config;
+   },
+
     "viewportHeight": 1000,
     "viewportWidth": 1280,
     "videoUploadOnPasses": false,
