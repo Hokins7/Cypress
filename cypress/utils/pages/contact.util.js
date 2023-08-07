@@ -26,7 +26,8 @@ const expected = {
     email: '22tester22@suntik.org',
     message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     apearTxt: `Thank you ${Cypress.env().FIRST_NAME}`,
-    apearMsg: 'A Customer Care Representative will be contacting you.'
+    apearMsg: 'A Customer Care Representative will be contacting you.',
+    contactUsTxt: 'Contact Us'
 }
 
 export default {
