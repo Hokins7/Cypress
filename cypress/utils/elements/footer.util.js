@@ -20,8 +20,8 @@ const expected = {
     homeLink: '/parabank/index.htm',
     aboutLink: 'about.html',
     serviceLink: 'services.htm',
-    productsLink: 'http://www.parasoft.com/jsp/products.jsp',
-    locationLink: 'http://www.parasoft.com/jsp/pr/contacts.jsp',
+    productsLink: '/products.jsp',
+    locationLink: '/contacts.jsp',
     forumLink: 'http://forums.parasoft.com/',
     sitemapLink: '/parabank/sitemap.htm',
     contactsLink: 'contact.htm'
