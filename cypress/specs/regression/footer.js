@@ -33,12 +33,30 @@ describe('Elements', () => {
             .should('have.text', Header.expected.link3Text)
             .and('be.visible');
     })
-    it('Products is displayed and has correct text', () => {
+    it('Products link is displayed and has correct text', () => {
         cy.get(Footer.productsLink)
             .should('have.text', Header.expected.link4Text)
             .and('be.visible');
     })
-    it('HomeLink is displayed and has correct text', () => {
-       
+    it('Location link is displayed and has correct text', () => {
+        cy.get(Footer.locationLink)
+            .should('have.text', Header.expected.link5Text)
+            .and('be.visible');
     })
+    it('Site Map link is displayed and has correct text', () => {
+        cy.get(Footer.sitemapLink)
+            .should('have.text', Footer.expected.sitemapLinkTxt)
+            .and('be.visible');
+    })
+    it('Forum link is displayed and has correct text', () => {
+        cy.get(Footer.forumLink)
+            .should('have.text', Footer.expected.forumLinkTxr)
+            .and('be.visible');
+    })
+    it('HomeLink is displayed and has correct text', () => {
+        cy.get(Footer.contactsLink)
+            .should('have.text', Contacts.expected.contactUsTxt)
+            .and('be.visible');
+    })
+
 })
