@@ -1,4 +1,6 @@
 import Footer from '../../utils/elements/footer.util'
+import Header from '../../utils/elements/header.util'
+import Contacts from '../../utils/pages/contact.util'
 
 describe('Elements', () => {
     before(() => cy.visit('/'));
@@ -20,5 +22,9 @@ describe('Elements', () => {
         cy.get(Footer.homeLink)
             .should('have.text', Footer.expected.homeLinkTxt)
             .and('be.visible');
+    })
+    it('About link is displayed and has correct text', () => {
+        cy.get(Footer.aboutLink)
+            .should('have.text', )
     })
 })
