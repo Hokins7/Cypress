@@ -23,8 +23,22 @@ describe('Elements', () => {
             .should('have.text', Footer.expected.homeLinkTxt)
             .and('be.visible');
     })
-    it('About link is displayed and has correct text', () => {
+    it('About Us link is displayed and has correct text', () => {
         cy.get(Footer.aboutLink)
-            .should('have.text', )
+            .should('have.text', Header.expected.link2Text)
+            .and('be.visible');
+    })
+    it('Service link is displayed and has correct text', () => {
+        cy.get(Footer.serviceLink)
+            .should('have.text', Header.expected.link3Text)
+            .and('be.visible');
+    })
+    it('Products is displayed and has correct text', () => {
+        cy.get(Footer.productsLink)
+            .should('have.text', Header.expected.link4Text)
+            .and('be.visible');
+    })
+    it('HomeLink is displayed and has correct text', () => {
+       
     })
 })
