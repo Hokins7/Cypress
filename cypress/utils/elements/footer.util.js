@@ -3,14 +3,14 @@ const selectors = {
     footer: '#footerPanel',
     copyright: '.copyright',
     devLink: '#footerPanel > .visit',
-    homeLink: '#footerPanel > ul > li[href*="index"]',
-    aboutLink: '#footerPanel > ul > li[href*="about"]',
-    serviceLink: '#footerPanel > ul > li[href*="services"]',
-    productsLink: '#footerPanel > ul > li[href*="products"]',
-    locationLink: '#footerPanel > ul > li[href*="contacts"]',
-    forumLink: '#footerPanel > ul > li[href*="forum"]',
-    sitemapLink: '#footerPanel > ul > li[href*="sitemap"]',
-    contactsLink: '#footerPanel > ul > li[href="contact.html"]'
+    homeLink: '#footerPanel > ul > li > a[href*="index"]',
+    aboutLink: '#footerPanel > ul > li > a[href*="about"]',
+    serviceLink: '#footerPanel > ul > li > a[href*="services"]',
+    productsLink: '#footerPanel > ul > li > a[href*="products"]',
+    locationLink: '#footerPanel > ul > li > a[href*="contacts"]',
+    forumLink: '#footerPanel > ul > li > a[href*="forum"]',
+    sitemapLink: '#footerPanel > ul > li > a[href*="sitemap"]',
+    contactsLink: '#footerPanel > ul > li > a[href*="contact.htm"]'
 }
 
 // expected results
