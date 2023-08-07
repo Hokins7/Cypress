@@ -18,6 +18,7 @@ const expected = {
     copyrightText: '© Parasoft. All rights reserved.',
     devLinkText: 'Visit us at: www.parasoft.com',
     homeLink: '/parabank/index.htm',
+    homeLinkTxt: 'Home',
     aboutLink: 'about.html',
     serviceLink: 'services.htm',
     productsLink: '/products.jsp',

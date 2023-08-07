@@ -16,4 +16,9 @@ describe('Elements', () => {
             .contains(Footer.expected.devLinkText)
             .and('be.visible');
     })
+    it('HomeLink is displayed and has correct text', () => {
+        cy.get(Footer.homeLink)
+            .should('have.text', Footer.expected.homeLinkTxt)
+            .and('be.visible');
+    })
 })
