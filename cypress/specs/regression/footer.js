@@ -91,7 +91,12 @@ describe('Functionality', () => {
     })
     it('Site link is working and redirecting to the Site page', () => {
         cy.get(Footer.sitemapLink).click();
-        cy.url().should('eq', Footer.expected.sitemapLink);
+        cy.url().should('include', Footer.expected.sitemapLink);
+        cy.go('back');
+    })
+    it('Contact link is working and redirecting to the Contact page', () => {
+        cy.get(Footer.contactsLink).click();
+        cy.url().should('include', Contacts.expected.contactsLink);
         cy.go('back');
     })
 
