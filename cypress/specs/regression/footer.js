@@ -79,5 +79,10 @@ describe('Functionality', () => {
         cy.url().should('include', Footer.expected.productsLink);
         cy.go('back');
     })
+    it('Location link is working and redirecting to the Location page', () => {
+        cy.get(Footer.locationLink).click();
+        cy.url().should('include', Footer.expected.locationLink);
+        cy.go('back');
+    })
 
 })

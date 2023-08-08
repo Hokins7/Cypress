@@ -22,7 +22,7 @@ const expected = {
     aboutLink: 'about.html',
     serviceLink: 'services.htm',
     productsLink: '/products.jsp',
-    locationLink: '/contacts.jsp',
+    locationLink: '/solutions/',
     forumLink: 'http://forums.parasoft.com/',
     forumLinkTxr: 'Forum',
     sitemapLink: '/parabank/sitemap.htm',
