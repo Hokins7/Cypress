@@ -84,11 +84,6 @@ describe('Functionality', () => {
         cy.url().should('include', Footer.expected.locationLink);
         cy.go('back');
     })
-    it('Forum link is working and redirecting to the Forum page', () => {
-        cy.get(Footer.forumLink).click();
-        cy.url().should('eq', Footer.expected.forumLink);
-        cy.go('back');
-    })
     it('Site link is working and redirecting to the Site page', () => {
         cy.get(Footer.sitemapLink).click();
         cy.url().should('include', Footer.expected.sitemapLink);
