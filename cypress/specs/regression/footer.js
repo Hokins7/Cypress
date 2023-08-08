@@ -75,8 +75,8 @@ describe('Functionality', () => {
         cy.go('back');
     })
     it('Products link is working and redirecting to the Products page', () => {
-        cy.get(Footer.aboutLink).click();
-        cy.url().should('include', Footer.expected.aboutLink);
+        cy.get(Footer.productsLink).click();
+        cy.url().should('include', Footer.expected.productsLink);
         cy.go('back');
     })
 
