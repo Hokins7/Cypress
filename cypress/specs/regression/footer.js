@@ -69,4 +69,15 @@ describe('Functionality', () => {
         cy.url().should('include', Footer.expected.aboutLink);
         cy.go('back');
     })
+    it('Services link is working and redirecting to the Services page', () => {
+        cy.get(Footer.serviceLink).click();
+        cy.url().should('include', Footer.expected.serviceLink);
+        cy.go('back');
+    })
+    it('Products link is working and redirecting to the Products page', () => {
+        cy.get(Footer.aboutLink).click();
+        cy.url().should('include', Footer.expected.aboutLink);
+        cy.go('back');
+    })
+
 })
