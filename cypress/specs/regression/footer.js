@@ -60,3 +60,13 @@ describe('Elements', () => {
     })
 
 })
+
+describe('Functionality', () => {
+    before(() => cy.visit('/'));
+
+    it('About Us link is working and redirecting to the About Us page', () => {
+        cy.get(Footer.aboutLink).click();
+        cy.url().should('include', Footer.expected.aboutLink);
+        cy.go('back');
+    })
+})
