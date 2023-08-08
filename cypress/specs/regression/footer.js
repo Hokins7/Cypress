@@ -97,7 +97,9 @@ describe('Functionality', () => {
     it('Contact link is working and redirecting to the Contact page', () => {
         cy.get(Footer.contactsLink).click();
         cy.url().should('include', Contacts.expected.contactsLink);
-        cy.go('back');
     })
-
+    it('Home link is working and redirecting to the Home page', () => {
+        cy.get(Footer.homeLink).click();
+        cy.url().should('include', Footer.expected.homeLink);
+    })
 })
