@@ -29,5 +29,10 @@ const expected = {
     addressStateTxt: 'State:',
     zipCodeTxt: 'Zip Code:',
     ssnTxt: 'SSN:',
-    
+    submitBtn: 'Find My Login Info'
+}
+
+export default {
+    ...selectors,
+    expected
 }
