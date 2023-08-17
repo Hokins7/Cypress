@@ -17,5 +17,17 @@ const selectors = {
     ssnTxt: '#lookupForm > table > tbody > tr:nth-child(7) > td:nth-child(1) > b',
     ssnFrm: '#ssn',
     submitBtn: 'input[value="Find My Login Info"]'
+}
 
+const expected = {
+    tittle: 'Customer Lookup',
+    subTittle: 'Please fill out the following information in order to validate your account.',
+    firstNameTxt: 'First Name:',
+    lastNameTxt: 'Last Name:',
+    addressStrTxt: 'Address:',
+    addressCityTxt: 'City:',
+    addressStateTxt: 'State:',
+    zipCodeTxt: 'Zip Code:',
+    ssnTxt: 'SSN:',
+    
 }
