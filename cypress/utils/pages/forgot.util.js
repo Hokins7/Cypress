@@ -20,6 +20,7 @@ const selectors = {
 }
 
 const expected = {
+    link: '/parabank/lookup.htm',
     tittle: 'Customer Lookup',
     subTittle: 'Please fill out the following information in order to validate your account.',
     firstNameTxt: 'First Name:',
