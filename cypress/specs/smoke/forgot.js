@@ -9,12 +9,12 @@ describe ('Elements', () => {
         cy.get(MainPage.rightPanel).should('be.visible');
     })
     it('Tittle is visible and has correct text', () => {
-        cy.get(Forgot.tittle())
+        cy.get(Forgot.tittle)
             .should('have.text', Forgot.expected.tittle)
             .and('be.visible');
     })
     it('Subtittle is visible and has correct text', () => {
-        cy.get(Forgot.subTittle())
+        cy.get(Forgot.subTittle)
             .should('have.text', Forgot.expected.subTittle)
             .and('be.visible');
     })
