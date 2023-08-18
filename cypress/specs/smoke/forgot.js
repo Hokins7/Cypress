@@ -43,5 +43,15 @@ describe ('Elements', () => {
             .should('have.text', Forgot.expected.addressStateTxt)
             .and('be.visible');
     })
+    it('ZipCode text is visible and has a correct text', () => {
+        cy.get(Forgot.zipCodeTxt)
+            .should('have.text', Forgot.expected.zipCodeTxt)
+            .and('be.visible');
+    })
+    it('SSN text is visible and has a correct text', () => {
+        cy.get(Forgot.ssnTxt)
+            .should('have.text', Forgot.expected.ssnTxt)
+            .and('be.visible');
+    })
 
 })
