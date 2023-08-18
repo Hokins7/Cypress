@@ -77,4 +77,19 @@ describe ('Functionality', () => {
             .type(SingUp.expected.streetAddressAcc)
             .and('be.visible');
     })
+    it('City form is visible and accept data', () => {
+        cy.get(Forgot.addressCityFrm)
+            .type(SingUp.expected.cityAddressAcc)
+            .and('be.visible');
+    })
+    it('State form is visible and accept data', () => {
+        cy.get(Forgot.addressStateFrm)
+            .type(SingUp.expected.stateAddressAcc)
+            .and('be.visible');
+    })
+    it('Zip Code form is visible and accept data', () => {
+        cy.get(Forgot.zipCodeFrm)
+            .type(SingUp.expected.zipCodeAcc)
+            .and('be.visible');
+    })
 })
