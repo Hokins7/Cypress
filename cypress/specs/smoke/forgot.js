@@ -1,5 +1,6 @@
 import Forgot from '../../utils/pages/forgot.util'
 import MainPage from '../../utils/pages/main_page.util'
+import SingUp from '../../utils/pages/singup.util'
 
 describe ('Elements', () => {
 
@@ -61,5 +62,19 @@ describe ('Elements', () => {
 })
 
 describe ('Functionality', () => {
-    
+    it('First name form is visible and accept data', () => {
+        cy.get(Forgot.firstNameFrm)
+            .type(SingUp.expected.firstNameAcc)
+            .and('be.visible');
+    })
+    it('Last name form is visible and accept data', () => {
+        cy.get(Forgot.lastNameFrm)
+            .type(SingUp.expected.lastNameAcc)
+            .and('be.visible');
+    })
+    it('Address form is visible and accept data', () => {
+        cy.get(Forgot.addressStrFrm)
+            .type(SingUp.expected.streetAddressAcc)
+            .and('be.visible');
+    })
 })
