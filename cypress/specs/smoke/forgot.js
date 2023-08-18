@@ -92,4 +92,12 @@ describe ('Functionality', () => {
             .type(SingUp.expected.zipCodeAcc)
             .and('be.visible');
     })
+    it('SSN form is visible and accept data', () => {
+        cy.get(Forgot.ssnFrm)
+            .type(SingUp.expected.ssnAcc)
+            .and('be.visible');
+    })
+    it('Submit button is visible and accept data', () => {
+        cy.get(Forgot.submitBtn).click();
+    })
 })
