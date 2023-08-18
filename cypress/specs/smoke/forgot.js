@@ -53,5 +53,10 @@ describe ('Elements', () => {
             .should('have.text', Forgot.expected.ssnTxt)
             .and('be.visible');
     })
+    it('Submit button is visible and has a correct text', () => {
+        cy.get(Forgot.submitBtn)
+            .should('have.attr','value',Forgot.expected.firstNameTxt)
+            .and('be.visible');
+    })
 
 })
