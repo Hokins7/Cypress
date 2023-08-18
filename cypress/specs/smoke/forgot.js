@@ -55,8 +55,11 @@ describe ('Elements', () => {
     })
     it('Submit button is visible and has a correct text', () => {
         cy.get(Forgot.submitBtn)
-            .should('have.attr','value',Forgot.expected.firstNameTxt)
+            .should('have.attr','value',Forgot.expected.submitBtn)
             .and('be.visible');
     })
+})
 
+describe ('Functionality', () => {
+    
 })
