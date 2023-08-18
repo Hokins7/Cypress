@@ -18,5 +18,10 @@ describe ('Elements', () => {
             .should('have.text', Forgot.expected.subTittle)
             .and('be.visible');
     })
+    it('Firstname text is visible and has a correct text', () => {
+        cy.get(Forgot.firstNameTxt)
+            .should('have.text', Forgot.expected.firstNameTxt)
+            .and('be.visible');
+    })
 
 })
