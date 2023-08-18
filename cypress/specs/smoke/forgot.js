@@ -33,6 +33,15 @@ describe ('Elements', () => {
             .should('have.text', Forgot.expected.addressStrTxt)
             .and('be.visible');
     })
-
+    it('City text is visible and has a correct text', () => {
+        cy.get(Forgot.addressCityTxt)
+            .should('have.text', Forgot.expected.addressCityTxt)
+            .and('be.visible');
+    })
+    it('State text is visible and has a correct text', () => {
+        cy.get(Forgot.addressStateTxt)
+            .should('have.text', Forgot.expected.addressStateTxt)
+            .and('be.visible');
+    })
 
 })
