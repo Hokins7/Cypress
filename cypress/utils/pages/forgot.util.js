@@ -17,6 +17,7 @@ const selectors = {
     ssnTxt: '#lookupForm > table > tbody > tr:nth-child(7) > td:nth-child(1) > b',
     ssnFrm: '#ssn',
     submitBtn: 'input[value="Find My Login Info"]',
+    firstNameErr: '#firstName\\.errors',
 
 }
 
