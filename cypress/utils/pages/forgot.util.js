@@ -18,6 +18,12 @@ const selectors = {
     ssnFrm: '#ssn',
     submitBtn: 'input[value="Find My Login Info"]',
     firstNameErr: '#firstName\\.errors',
+    lastNameErr: '#lastName\\.errors',
+    addressStrErr: '#address\\.street\\.errors',
+    addressCityErr: '#address\\.city\\.errors',
+    addressStateErr: '#address\\.state\\.errors',
+    zipCodeErr: '#address\\.zipCode\\.errors',
+    ssnErr: '#ssn.errors'
 
 }
 
