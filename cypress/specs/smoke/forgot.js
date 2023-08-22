@@ -111,3 +111,9 @@ describe ('Functionality', () => {
 
     })
 })
+
+describe('Negative scenarios', () => {
+    it('If information do not fill, error masages is apears', () => {
+        
+    })
+})

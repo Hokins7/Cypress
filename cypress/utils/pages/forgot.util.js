@@ -41,7 +41,15 @@ const expected = {
     submitBtn: 'Find My Login Info',
     correctSubtittle: 'Your login information was located successfully. You are now logged in. ',
     username: 'Username',
-    password: 'Password'
+    password: 'Password',
+    firstNameErrTxt: 'First name is required.',
+    lastNameErrTxt: 'Last name is required.',
+    addressStrErrTxt: 'Address is required.',
+    addressCityErrTxt: 'City is required.',
+    addressCityErrTxt: 'State is required.',
+    addressStateErrTxt: 'Zip Code is required.',
+    zipCodeErrTxt: 'Zip Code is required.',
+    ssnErrTxt: 'Social Security Number is required.'
 
 }
 
