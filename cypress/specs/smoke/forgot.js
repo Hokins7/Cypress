@@ -104,10 +104,10 @@ describe ('Functionality', () => {
             .should('have.text', Forgot.expected.correctSubtittle);
         cy.get(Forgot.subTittle)
             .last().children().first()
-            .should('have.text', 'Username');
+            .should('have.text', Forgot.expected.username);
         cy.get(Forgot.subTittle)
             .last().children().last()
-            .should('have.text', 'Password');
+            .should('have.text', Forgot.expected.password);
 
     })
 })

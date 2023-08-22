@@ -40,6 +40,8 @@ const expected = {
     ssnTxt: 'SSN:',
     submitBtn: 'Find My Login Info',
     correctSubtittle: 'Your login information was located successfully. You are now logged in. ',
+    username: 'Username',
+    password: 'Password'
 
 }
 
