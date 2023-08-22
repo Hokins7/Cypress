@@ -23,7 +23,7 @@ const selectors = {
     addressCityErr: '#address\\.city\\.errors',
     addressStateErr: '#address\\.state\\.errors',
     zipCodeErr: '#address\\.zipCode\\.errors',
-    ssnErr: '#ssn.errors'
+    ssnErr: '#ssn\\.errors'
 
 }
 
@@ -46,8 +46,7 @@ const expected = {
     lastNameErrTxt: 'Last name is required.',
     addressStrErrTxt: 'Address is required.',
     addressCityErrTxt: 'City is required.',
-    addressCityErrTxt: 'State is required.',
-    addressStateErrTxt: 'Zip Code is required.',
+    addressStateErrTxt: 'State is required.',
     zipCodeErrTxt: 'Zip Code is required.',
     ssnErrTxt: 'Social Security Number is required.'
 

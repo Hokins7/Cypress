@@ -113,7 +113,11 @@ describe('Functionality', () => {
 })
 
 describe('Negative scenarios', () => {
+    
     it('If information do not fill, error masages is apears', () => {
+        cy.visit(Forgot.expected.link);
+        cy.get(Forgot.submitBtn).click();
+
         cy.get(Forgot.firstNameErr)
             .should('be.visible')
             .and('have.text', Forgot.expected.firstNameErrTxt);
