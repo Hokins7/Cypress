@@ -1,6 +1,6 @@
 const selectors = {
-    firstName: '[id="customer.firstName"]',
-    lastName: '[id="customer.lastName"]',
+    firstName: '#customer\\.firstName',
+    lastName: '#customer\\.lastName',
     streetAddress: '[id="customer.address.street"]',
     cityAddress: '[id="customer.address.city"]',
     stateAddress: '[id="customer.address.state"]',
