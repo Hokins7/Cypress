@@ -38,7 +38,9 @@ const expected = {
     addressStateTxt: 'State:',
     zipCodeTxt: 'Zip Code:',
     ssnTxt: 'SSN:',
-    submitBtn: 'Find My Login Info'
+    submitBtn: 'Find My Login Info',
+    correctSubtittle: 'Your login information was located successfully. You are now logged in. ',
+
 }
 
 export default {

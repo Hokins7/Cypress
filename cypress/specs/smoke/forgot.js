@@ -99,5 +99,15 @@ describe ('Functionality', () => {
     })
     it('Submit button is visible and accept data', () => {
         cy.get(Forgot.submitBtn).click();
+        cy.get(Forgot.subTittle)
+            .first()
+            .should('have.text', Forgot.expected.correctSubtittle);
+        cy.get(Forgot.subTittle)
+            .last().children().first()
+            .should('have.text', 'Username');
+        cy.get(Forgot.subTittle)
+            .last().children().last()
+            .should('have.text', 'Password');
+
     })
 })
