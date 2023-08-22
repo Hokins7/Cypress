@@ -2,7 +2,7 @@ import Forgot from '../../utils/pages/forgot.util'
 import MainPage from '../../utils/pages/main_page.util'
 import SingUp from '../../utils/pages/singup.util'
 
-describe ('Elements', () => {
+describe('Elements', () => {
 
     before(() => cy.visit(Forgot.expected.link));
 
@@ -56,12 +56,12 @@ describe ('Elements', () => {
     })
     it('Submit button is visible and has a correct text', () => {
         cy.get(Forgot.submitBtn)
-            .should('have.attr','value',Forgot.expected.submitBtn)
+            .should('have.attr', 'value', Forgot.expected.submitBtn)
             .and('be.visible');
     })
 })
 
-describe ('Functionality', () => {
+describe('Functionality', () => {
     it('First name form is visible and accept data', () => {
         cy.get(Forgot.firstNameFrm)
             .type(SingUp.expected.firstNameAcc)
@@ -114,6 +114,27 @@ describe ('Functionality', () => {
 
 describe('Negative scenarios', () => {
     it('If information do not fill, error masages is apears', () => {
-        
+        cy.get(Forgot.firstNameErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.firstNameErrTxt);
+        cy.get(Forgot.lastNameErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.lastNameErrTxt);
+        cy.get(Forgot.addressStrErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.addressStrErrTxt);
+        cy.get(Forgot.addressCityErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.addressCityErrTxt);
+        cy.get(Forgot.addressStateErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.addressStateErrTxt);
+        cy.get(Forgot.zipCodeErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.zipCodeErrTxt);
+        cy.get(Forgot.ssnErr)
+            .should('be.visible')
+            .and('have.text', Forgot.expected.ssnErrTxt);
+
     })
 })
