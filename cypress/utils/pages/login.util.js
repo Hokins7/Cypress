@@ -11,7 +11,8 @@ const selectors = {
    forgotLink: 'a[href="lookup.htm"]',
    registerLink: 'a[href="register.htm"]',
    accountPanel: '.ng-scope',
-   errorMsg: '#error'
+   errorMsg: '#error',
+   errorTittle: '#rightPanel > .tittle'
 }
 
 //expectede results
