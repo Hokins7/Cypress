@@ -11,8 +11,8 @@ const selectors = {
    forgotLink: 'a[href="lookup.htm"]',
    registerLink: 'a[href="register.htm"]',
    accountPanel: '.ng-scope',
-   errorMsg: '#error',
-   errorTittle: '#rightPanel > .tittle',
+   errorMsg: '.error',
+   errorTittle: '#rightPanel > .title',
    logOutBtn: 'a[href="/parabank/logout.htm"]'
 }
 
