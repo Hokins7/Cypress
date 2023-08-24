@@ -19,3 +19,12 @@ describe ('Authorization', () => {
     
     })
 })
+
+describe ('Negative scenarios', () => {
+    before(() => cy.visit('/'));
+
+        it('Error message appears when input wrong data', () => {
+            
+        })
+
+})
