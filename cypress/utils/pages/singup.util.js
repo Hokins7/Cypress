@@ -11,7 +11,8 @@ const selectors = {
     password: '#customer\\.password',
     passwordConfirm: '#repeatedPassword',
     submitBtn: 'input[type="submit"]',
-    welcomeMsg: '#rightPanel > .tittle'
+    welcomeMsg: '#rightPanel > .tittle',
+    errorMsg: '#error'
 }
 
 const expected = {
@@ -26,7 +27,9 @@ const expected = {
     ssnAcc: Cypress.env().SSN_NUMBER,
     userNickNameAcc: Cypress.env().NICK_NAME,
     passwordAcc: Cypress.env().PASSWORD,
-    welcomeMsg: 'Welcome WitherGerald'
+    welcomeMsg: 'Welcome WitherGerald',
+    errorMsg: 'Please enter a username and password.',
+    errorTittle: 'Error!'
 }
 
 const fuctions = {
