@@ -12,7 +12,8 @@ const selectors = {
    registerLink: 'a[href="register.htm"]',
    accountPanel: '.ng-scope',
    errorMsg: '#error',
-   errorTittle: '#rightPanel > .tittle'
+   errorTittle: '#rightPanel > .tittle',
+   logOutBtn: 'a[href="/parabank/logout.htm"]'
 }
 
 //expectede results

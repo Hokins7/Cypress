@@ -12,7 +12,11 @@ describe ('Authorization', () => {
     })
 
     it('Logout', () => {
-        
+        it('LogOut function works correctly', () => {
+            cy.get('', () => {
+                
+            })
+        })
     })
 
     it ('Remind password', () => {
@@ -26,7 +30,10 @@ describe ('Negative scenarios', () => {
         it('Error message appears when input wrong data', () => {
             cy.get(Login.errorTittle)
                 .should('be.visible')
-                .and('have.text', Login.expected.errorTittle)
+                .and('have.text', Login.expected.errorTittle);
+            cy.get(Login.errorMsg)
+                .should('be.visible')
+                .and('have.text', Login.expected.errorMsg);
         })
 
 })
