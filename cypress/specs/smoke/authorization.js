@@ -24,7 +24,9 @@ describe ('Negative scenarios', () => {
     before(() => cy.visit('/'));
 
         it('Error message appears when input wrong data', () => {
-            
+            cy.get(Login.errorTittle)
+                .should('be.visible')
+                .and('have.text', Login.expected.errorTittle)
         })
 
 })
