@@ -11,6 +11,7 @@ const selectors = {
    forgotLink: 'a[href="lookup.htm"]',
    registerLink: 'a[href="register.htm"]',
    accountPanel: '.ng-scope',
+   errorMsg: '#error'
 }
 
 //expectede results
@@ -21,6 +22,8 @@ const expected = {
    logginBtnText: 'Log In',
    forgotLinkText: 'Forgot login info?',
    registerLinkText: 'Register',
+   errorMsg: 'Please enter a username and password.',
+    errorTittle: 'Error!'
 }
 
  // Fuctions
