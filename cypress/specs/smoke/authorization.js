@@ -23,7 +23,7 @@ describe ('Authorization', () => {
 describe ('Negative scenarios', () => {
     before(() => cy.visit('/'));
 
-        it('Error message appears when input wrong data', () => {
+        it('Error message appears when input wrong information', () => {
             cy.get(Login.logginBtn).click();
             cy.get(Login.errorTittle)
                 .should('be.visible')
