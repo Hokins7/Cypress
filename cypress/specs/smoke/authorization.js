@@ -12,11 +12,7 @@ describe ('Authorization', () => {
     })
 
     it('LogOut function works correctly', () => {
-            cy.get(Login.logOutBtn).click();
-    })
-
-    it ('Remind password', () => {
-    
+            Login.LogOut();
     })
 })
 
