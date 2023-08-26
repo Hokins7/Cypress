@@ -39,10 +39,14 @@ const expected = {
     cy.get(selectors.passField).type(value2)
     cy.get(selectors.logginBtn).click();
  };
+ const LogOut = () => {
+   cy.get(selectors.logOutBtn).click();
+ }
 
 export default {
     ...selectors,
     expected,
     checkLoginSection,
-    logIn
+    logIn,
+    LogOut
 }
