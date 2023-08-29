@@ -11,7 +11,7 @@ const selectors = {
     password: '#customer\\.password',
     passwordConfirm: '#repeatedPassword',
     submitBtn: 'input[type="submit"]',
-    welcomeMsg: '#rightPanel > .tittle',
+    welcomeMsg: '#rightPanel > .title',
 }
 
 const expected = {
