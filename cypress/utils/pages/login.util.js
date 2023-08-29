@@ -13,7 +13,6 @@ const selectors = {
    accountPanel: '.ng-scope',
    errorMsg: '.error',
    errorTittle: '#rightPanel > .title',
-   logOutBtn: 'a[href="/parabank/logout.htm"]'
 }
 
 //expectede results
@@ -39,14 +38,10 @@ const expected = {
     cy.get(selectors.passField).type(value2)
     cy.get(selectors.logginBtn).click();
  };
- const LogOut = () => {
-   cy.get(selectors.logOutBtn).click();
- }
 
 export default {
     ...selectors,
     expected,
     checkLoginSection,
-    logIn,
-    LogOut
+    logIn
 }
