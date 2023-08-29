@@ -1,5 +1,6 @@
 import Login from '../../utils/pages/login.util';
-import SingUp from '../../utils/pages/singup.util'
+import SingUp from '../../utils/pages/singup.util';
+import Account from '../../utils/pages/account.util'
 
 describe ('Authorization', () => {
 
@@ -12,7 +13,7 @@ describe ('Authorization', () => {
     })
 
     it('LogOut function works correctly', () => {
-            Login.LogOut();
+            Account.LogOut();
     })
 })
 
