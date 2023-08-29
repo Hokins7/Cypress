@@ -14,6 +14,9 @@ describe ('Authorization', () => {
 
     it('LogOut function works correctly', () => {
             Account.LogOut();
+            cy.get(Login.heading)
+                .should('be.visible')
+                .and('have.text', Login.expected.heading)
     })
 })
 
