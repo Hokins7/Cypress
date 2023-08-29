@@ -26,7 +26,7 @@ const expected = {
     ssnAcc: Cypress.env().SSN_NUMBER,
     userNickNameAcc: Cypress.env().NICK_NAME,
     passwordAcc: Cypress.env().PASSWORD,
-    welcomeMsg: 'Welcome WitherGerald',
+    welcomeMsg: `Welcome ${Cypress.env().NICK_NAME}`,
 }
 
 const fuctions = {
