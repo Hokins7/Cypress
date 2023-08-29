@@ -1,5 +1,5 @@
 const selectors = {
-
+    smallext: '.smallText',
 }
 
 const expected = {
