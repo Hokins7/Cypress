@@ -7,3 +7,7 @@ describe('Elements', () => {
 describe('Functionality', () => {
 
 })
+
+describe('LogOut', () => {
+
+})
