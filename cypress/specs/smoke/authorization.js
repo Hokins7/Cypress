@@ -2,9 +2,12 @@ import Login from '../../utils/pages/login.util';
 import SingUp from '../../utils/pages/singup.util';
 import Account from '../../utils/pages/account.util'
 
-describe ('Authorization', () => {
+describe('Authorization', () => {
 
-    before(() => cy.visit('/'));
+    before(() => {
+        cy.visit('/');
+        Account.LogInCheck();
+    });
 
     it('Login', () => {
         Login.checkLoginSection();
@@ -13,24 +16,24 @@ describe ('Authorization', () => {
     })
 
     it('LogOut function works correctly', () => {
-            Account.LogOut();
-            cy.get(Login.heading)
-                .should('be.visible')
-                .and('have.text', Login.expected.heading)
+        Account.LogOut();
+        cy.get(Login.heading)
+            .should('be.visible')
+            .and('have.text', Login.expected.heading)
     })
 })
 
-describe ('Negative scenarios', () => {
+describe('Negative scenarios', () => {
     before(() => cy.visit('/'));
 
-        it('Error message appears when input wrong information', () => {
-            cy.get(Login.logginBtn).click();
-            cy.get(Login.errorTittle)
-                .should('be.visible')
-                .and('have.text', Login.expected.errorTittle);
-            cy.get(Login.errorMsg)
-                .should('be.visible')
-                .and('have.text', Login.expected.errorMsg);
-        })
+    it('Error message appears when input wrong information', () => {
+        cy.get(Login.logginBtn).click();
+        cy.get(Login.errorTittle)
+            .should('be.visible')
+            .and('have.text', Login.expected.errorTittle);
+        cy.get(Login.errorMsg)
+            .should('be.visible')
+            .and('have.text', Login.expected.errorMsg);
+    })
 
 })
