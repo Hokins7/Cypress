@@ -26,15 +26,9 @@ const expected = {
 const LogOut = () => {
     cy.get(selectors.logOutBtn).click();
   }
-const LogInCheck = () => {
-    if(cy.get(selectors.logOutBtn)){
-        cy.get(selectors.logOutBtn).click();
-    }
-}
 
 export default {
     ...selectors,
     expected,
     LogOut,
-    LogInCheck
 }
