@@ -6,7 +6,6 @@ describe('Authorization', () => {
 
     before(() => {
         cy.visit('/');
-        Account.LogInCheck();
     });
 
     it('Login', () => {
