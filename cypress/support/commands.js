@@ -23,8 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-import Account from '../utils/pages/account.util'
-
-Cypress.Commands.add('clickIfExists', (selector) => {
-    cy.get(selector).should('exist').click();
-  });
