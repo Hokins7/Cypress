@@ -31,6 +31,22 @@ describe('Elements', () => {
             .should('be.visible')
             .and('have.text', Account.expected.findTransactionTxt);
     })
+    it('Six link visible and have a correct text', () => {
+        cy.get(Account.updateContInfoLink)
+            .should('be.visible')
+            .and('have.text', Account.expected.updateContInfoTxt);
+    })
+
+    it('Seven link visible and have a correct text', () => {
+        cy.get(Account.requestLoanLink)
+            .should('be.visible')
+            .and('have.text', Account.expected.requestLoanTxt);
+    })
+    it('LogOut button visible and have a correct text', () => {
+        cy.get(Account.logOutBtn)
+            .should('be.visible')
+            .and('have.text', Account.expected.logOutBtnTxt);
+    })
 })
 
 describe('Functionality', () => {
