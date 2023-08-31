@@ -1,6 +1,14 @@
 import Account from '../../utils/pages/account.util'
+import LogIn from '../../utils/pages/login.util'
+import SingUp from '../../utils/pages/singup.util';
 
 describe('Elements', () => {
+    before(() => {
+        cy.visit('/');
+        LogIn.checkLoginSection();
+        LogIn.logIn(SingUp.expected.userNickNameAcc, SingUp.expected.passwordAcc);
+    });
+
     it('Welcome message visible and correct', () => {
         cy.get(Account.smallText)
             .should('be.visible')
