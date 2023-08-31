@@ -21,6 +21,16 @@ describe('Elements', () => {
             .should('be.visible')
             .and('have.text', Account.expected.transfFundsTxt);
     })
+    it('Four link visible and have a correct text', () => {
+        cy.get(Account.billPayLink)
+            .should('be.visible')
+            .and('have.text', Account.expected.billPayTxt);
+    })
+    it('Five link visible and have a correct text', () => {
+        cy.get(Account.findTransactionLink)
+            .should('be.visible')
+            .and('have.text', Account.expected.findTransactionTxt);
+    })
 })
 
 describe('Functionality', () => {
