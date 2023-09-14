@@ -58,7 +58,9 @@ describe('Elements', () => {
 })
 
 describe('Functionality', () => {
-
+    it('First link redirect to the correct page', () => {
+        cy.get(Account.openNewAccLink).click();
+    })
 })
 
 describe('LogOut', () => {
