@@ -64,6 +64,9 @@ describe('Functionality', () => {
     it('Second link redirect to the correct page', () => {
         cy.get(Account.accOverviewLink).click();
     })
+    it('Second link redirect to the correct page', () => {
+        cy.get(Account.transfFundsLink).click();
+    })
 })
 
 describe('LogOut', () => {
