@@ -70,7 +70,7 @@ describe('Functionality', () => {
     it('Four link redirect to the correct page', () => {
         cy.get(Account.billPayLink).click();
     })
-    it('Second link redirect to the correct page', () => {
+    it('Five link redirect to the correct page', () => {
         cy.get(Account.findTransactionLink).click();
     })
 })
