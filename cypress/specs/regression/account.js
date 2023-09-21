@@ -57,7 +57,20 @@ describe('Elements', () => {
     })
 })
 
-
+describe('Functionality', () => {
+    it('First link redirect to the correct page', () => {
+        cy.get(Account.openNewAccLink).click();
+    })
+    it('Second link redirect to the correct page', () => {
+        cy.get(Account.accOverviewLink).click();
+    })
+    it('Second link redirect to the correct page', () => {
+        cy.get(Account.transfFundsLink).click();
+    })
+    it('Second link redirect to the correct page', () => {
+        cy.get(Account.billPayLink).click();
+    })
+})
 
 describe('LogOut', () => {
 
