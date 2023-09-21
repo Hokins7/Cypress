@@ -67,16 +67,16 @@ describe('Functionality', () => {
     it('Third link redirect to the correct page', () => {
         cy.get(Account.transfFundsLink).click();
     })
-    it('Four link redirect to the correct page', () => {
+    it('Fourth link redirect to the correct page', () => {
         cy.get(Account.billPayLink).click();
     })
-    it('Five link redirect to the correct page', () => {
+    it('Fifth link redirect to the correct page', () => {
         cy.get(Account.findTransactionLink).click();
     })
-    it('Six link redirect to the correct page', () => {
+    it('Sixth link redirect to the correct page', () => {
         cy.get(Account.updateContInfoLink).click();
     })
-    it('Seven link redirect to the correct page', () => {
+    it('Seventh link redirect to the correct page', () => {
         cy.get(Account.requestLoanLink).click();
     })
 })
