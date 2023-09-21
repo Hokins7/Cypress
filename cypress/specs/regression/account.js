@@ -73,6 +73,9 @@ describe('Functionality', () => {
     it('Five link redirect to the correct page', () => {
         cy.get(Account.findTransactionLink).click();
     })
+    it('Six link redirect to the correct page', () => {
+        cy.get(Account.updateContInfoLink).click();
+    })
 })
 
 describe('LogOut', () => {
