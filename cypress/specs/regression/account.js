@@ -65,6 +65,8 @@ describe('Functionality', () => {
     })
     it('Second link redirect to the correct page', () => {
         cy.get(Account.accOverviewLink).click();
+        cy.url().should('include', ' ');
+        cy.go('back');
     })
     it('Third link redirect to the correct page', () => {
         cy.get(Account.transfFundsLink).click();
