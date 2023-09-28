@@ -70,6 +70,8 @@ describe('Functionality', () => {
     })
     it('Third link redirect to the correct page', () => {
         cy.get(Account.transfFundsLink).click();
+        cy.url().should('include', ' ');
+        cy.go('back');
     })
     it('Fourth link redirect to the correct page', () => {
         cy.get(Account.billPayLink).click();
