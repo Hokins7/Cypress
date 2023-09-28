@@ -75,6 +75,8 @@ describe('Functionality', () => {
     })
     it('Fourth link redirect to the correct page', () => {
         cy.get(Account.billPayLink).click();
+        cy.url().should('include', ' ');
+        cy.go('back');
     })
     it('Fifth link redirect to the correct page', () => {
         cy.get(Account.findTransactionLink).click();
