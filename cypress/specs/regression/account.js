@@ -80,6 +80,8 @@ describe('Functionality', () => {
     })
     it('Fifth link redirect to the correct page', () => {
         cy.get(Account.findTransactionLink).click();
+        cy.url().should('include', ' ');
+        cy.go('back');
     })
     it('Sixth link redirect to the correct page', () => {
         cy.get(Account.updateContInfoLink).click();
