@@ -60,6 +60,8 @@ describe('Elements', () => {
 describe('Functionality', () => {
     it('First link redirect to the correct page', () => {
         cy.get(Account.openNewAccLink).click();
+        cy.url().should('include', ' ');
+        cy.go('back');
     })
     it('Second link redirect to the correct page', () => {
         cy.get(Account.accOverviewLink).click();
