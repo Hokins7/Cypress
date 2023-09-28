@@ -85,6 +85,8 @@ describe('Functionality', () => {
     })
     it('Sixth link redirect to the correct page', () => {
         cy.get(Account.updateContInfoLink).click();
+        cy.url().should('include', ' ');
+        cy.go('back');
     })
 
 })
